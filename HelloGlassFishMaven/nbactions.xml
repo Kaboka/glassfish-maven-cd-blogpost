@@ -23,6 +23,20 @@
                 <goal>install</goal>
                 <goal>glassfish:redeploy</goal>
                 <goal>-e</goal>
+                <goal>-X</goal>
+            </goals>
+            <properties>
+                <glassfish.properties.file.argument>testing</glassfish.properties.file.argument>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-Deploy</actionName>
+            <displayName>Deploy</displayName>
+            <goals>
+                <goal>properties:read-project-properties</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+                <goal>glassfish:deploy</goal>
             </goals>
             <properties>
                 <glassfish.properties.file.argument>testing</glassfish.properties.file.argument>

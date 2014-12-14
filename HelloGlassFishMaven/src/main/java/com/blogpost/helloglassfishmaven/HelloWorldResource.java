@@ -14,7 +14,7 @@ import javax.ws.rs.Consumes;
  *
  * @author mkuchtiak
  */
-
+///////////////////////////
 @Stateless
 @Path("/helloWorld")
 public class HelloWorldResource {
